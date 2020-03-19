@@ -1,0 +1,61 @@
+// EVITER LES MUTATION D'OBJET 
+
+
+const arrayOne = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+const arrayTwo = arrayOne.slice().reverse();  // slice() et ... "spread" recupere linterieur de [] et le copie 
+const arrayThree = [...arrayOne].reverse();
+console.log("1", arrayOne, "2", arrayTwo, "3", arrayThree)
+
+// FAIRE UN 3eme TABLEAU
+
+const arrayFour= [];
+for (let i = 0; i < arrayOne.length; i++){
+  arrayFour[i] = arrayOne[i] + arrayTwo[i]
+}
+
+//   SWITCH  //
+// but d'1 switch : dans menu déroulant chaque valeur est une "case"
+// faire 1 boucle 
+
+const product = "pépito";
+
+switch(product) {
+  case "pépito":
+    console.log("2 euros")
+    break;
+    case "minidou":
+      console.log("7 euros")
+      break;
+      default:
+        console.log("cette article n'existe pas")
+}
+
+if (product === "pépito") {
+  console.log("2 euros")
+}
+
+// SWITCH
+
+const list = () =>{
+  switch(product) {
+    case "farine":
+      console.log("Farine") 
+      break;
+      default:
+      console.log("") 
+        break
+  }
+}
+
+// OBJETS
+
+/// profil  utilisateur
+
+const profilUser = {
+  name : "François",
+  age : 27,
+  hobbies: ["football", "switch"],
+  job: "developer",
+}
+
+
